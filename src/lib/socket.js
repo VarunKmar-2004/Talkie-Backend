@@ -5,7 +5,7 @@ const app=express();
 const server=http.createServer(app);
 const io=new Server(server,{
     cors:{
-        origin:['http://localhost:5173']
+        origin:['https://talkie-a-real-time-chat-application.vercel.app']
     },
 });
 export function getRecieverSokcetId(userId){
