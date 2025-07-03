@@ -16,6 +16,9 @@ app.use(cors({
     credentials:true
 }))
 const Port=process.env.PORT
+app.get('/',(req,res)=>{
+    res.send('Hello World!')
+})
 app.use('/api/auth',authRoutes)
 app.use('/api/messages',messageRoutes)
 server.listen(Port,()=>{
